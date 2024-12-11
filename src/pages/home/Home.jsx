@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import Card from '../components/card'
+import Card from '../components/Card'
 import Navbar from '../components/Navbar'
 import axios from 'axios'
 
