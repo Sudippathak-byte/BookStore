@@ -37,7 +37,7 @@ import { useNavigate, useParams } from "react-router-dom"
         formData.append(key,value)
     })
     formData.append('image',image)
-     const response =await axios.patch(`http://localhost:3000/book/${id}`,formData)
+     const response =await axios.patch(`https://node-module-crud-1.onrender.com/book/${id}`,formData)
      if(response.status === 200){
         navigate("/book/" + id)
      }

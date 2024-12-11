@@ -10,7 +10,7 @@ const SingleBook = () => {
 
     const [book,setbook ] = useState([])
     const fetchBook = async ()=>{
-        const response = await axios.get(`http://localhost:3000/book/${id}`)
+        const response = await axios.get(`https://node-module-crud-1.onrender.com/book/${id}`)
         if(response.status === 200){
             setbook(response.data.data)
         }
@@ -21,7 +21,7 @@ const SingleBook = () => {
     
     
     const  handleDelete = async()=> {
-          const api =`http://localhost:3000/book/${id}`;
+          const api =`https://node-module-crud-1.onrender.com/book/${id}`;
           const response = await axios.delete(api)
           if(response.status === 200){
             alert('the boot has been deleted')
