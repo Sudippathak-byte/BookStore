@@ -35,7 +35,7 @@ import { useNavigate } from "react-router-dom"
         formData.append(key,value)
     })
     formData.append('image',image)
-     const response =await axios.post("http://localhost:3000/book",formData)
+     const response =await axios.post("https://node-module-crud-1.onrender.com/book",formData)
      if(response.status === 201){
         navigate("/")
      }
