@@ -47,7 +47,7 @@ import { useNavigate, useParams } from "react-router-dom"
    }
 
    const fetchBook = async()=>{
-    const response = await axios.get(`http://localhost:3000/book/${id}`)
+    const response = await axios.get(`https://node-module-crud-1.onrender.com/book/${id}`)
     if (response.status === 200){
         console.log(response.data.data)
         setData(response.data.data)
